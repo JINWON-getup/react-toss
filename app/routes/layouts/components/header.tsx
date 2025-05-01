@@ -1,8 +1,8 @@
 import TossLogo from '~/components/svg/toss-log.svg?react';
 import { useLanguage } from '~/hooks/use-language';
 
+import NavButton from '../../pages/home/components/nav-button';
 import LangButton from './lang-button';
-import NavButton from './nav-button';
 
 interface NavItem {
   to: string;
