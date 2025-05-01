@@ -11,8 +11,6 @@ import { Label } from '~/components/ui/label';
 import { useLanguage } from '~/hooks/use-language';
 import { useTheme } from '~/hooks/use-theme';
 
-import type { Route } from './+types/home';
-
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   const t = await localize<WelcomeJson>(request, 'welcome');
   return { t };
@@ -23,7 +21,7 @@ export const meta: MetaFunction<typeof loader> = ({ data }) => {
   return [{ title: t.meta.title }, { name: 'description', content: t.meta.description }];
 };
 
-export default function Home({ loaderData }: Route.ComponentProps) {
+export default function Home({ loaderData }) {
   const { t } = loaderData;
   const [language, setLanguage] = useLanguage();
   const [theme, setTheme] = useTheme();
