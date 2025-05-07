@@ -1,8 +1,8 @@
-import TossLogo from '~/components/svg/toss-log.svg?react';
+import TossLogo from '~/components/svg/toss-logo.svg?react';
 import { useLanguage } from '~/hooks/use-language';
 
-import NavButton from '../../pages/home/components/nav-button';
 import LangButton from './lang-button';
+import NavButton from './nav-button';
 
 interface NavItem {
   to: string;
@@ -12,7 +12,7 @@ interface NavItem {
 const MENU: NavItem[] = [
   {
     to: '#',
-    label: '회사소개',
+    label: '회사 소개',
   },
   {
     to: '#',
@@ -38,6 +38,7 @@ const MENU: NavItem[] = [
 
 export default function Header() {
   const [language, setLanguage] = useLanguage();
+
   return (
     <header className="fixed z-50 h-[60px] w-full bg-white">
       <div className="container flex h-full items-center justify-between">
@@ -48,7 +49,6 @@ export default function Header() {
           {MENU.map((item, i) => (
             <NavButton key={i}>{item.label}</NavButton>
           ))}
-          <NavButton />
         </nav>
         <div>
           <LangButton language={language} setLanguage={setLanguage} value="ko">

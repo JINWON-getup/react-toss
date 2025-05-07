@@ -12,7 +12,7 @@ export default function Hero() {
         className="absolute z-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1, ease: 'easeOut' }}
+        transition={{ delay: 2, duration: 0.7, ease: 'easeOut' }}
       >
         <h1 className="text-center text-[66px] leading-[1.4] font-[700]">
           금융의 모든 것<br />
