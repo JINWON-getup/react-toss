@@ -1,24 +1,27 @@
+import InDropUp from '~/components/animation/in-drop-up';
 import AlwaysFree from '~/components/svg/always-free.svg?react';
 import Shield from '~/components/svg/shield.svg?react';
 import Timer from '~/components/svg/timer.svg?react';
 
 export default function TransferService() {
   return (
-    <section className="h-[2311px]">
+    <section className="h-[2311px">
       <div className="container h-full py-[250px]">
-        <div className="mb-[80px]">
-          <h2 className="mb-[30px] text-[28px] leading-[1.3] font-[700] text-[#3182F6]">
+        <InDropUp className="mb-[80px]">
+          <h2 className="mb-[30px] text-[28px] leading-[1.3] font-[700] text-[#3182f6]">
             송금
           </h2>
           <p className="text-[50px] leading-[1.4] font-[700] text-[#191f28]">
             간편하고 안전하게
-            <br /> 수수료는 평생 무료로,
-            <br /> 이런 송금 써보셨나요?
+            <br />
+            수수료는 평생 무료로,
+            <br />
+            이런 송금 써보셨나요?
           </p>
-        </div>
-        <div className="mb-[150px] flex justify-between">
+        </InDropUp>
+        <InDropUp className="mb-[150px] flex justify-between">
           <div className="w-[510px]">
-            <h2 className="mb-[10px] flex items-center gap-1 text-[20px] leading-[1.4] font-[600] text-[#3182f6]">
+            <h2 className="item-center mb-[10px] flex gap-1 text-[20px] leading-[1.4] font-[600] text-[#3182f6]">
               <div className="h-[24px] w-[24px]">
                 <AlwaysFree />
               </div>
@@ -31,7 +34,7 @@ export default function TransferService() {
             </p>
             <p
               className="text-[22px] leading-[1.5] font-[600]"
-              style={{ color: 'rgb(107, 118 ,132)' }}
+              style={{ color: 'rgb(107, 118, 132)' }}
             >
               누구에게 보내든 은행 상관 없이,
               <br />
@@ -41,13 +44,13 @@ export default function TransferService() {
           <div className="w-[510px]">
             <img src="/images/complete.png" alt="complete" />
           </div>
-        </div>
-        <div className="mb-[510px] flex justify-between">
+        </InDropUp>
+        <InDropUp className="mb-[150px] flex justify-between">
           <div className="w-[510px]">
             <img src="/images/faker.png" alt="faker" />
           </div>
           <div className="w-[510px]">
-            <h2 className="mb-[10px] flex items-center gap-1 text-[20px] leading-[1.4] font-[600] text-[#3182f6]">
+            <h2 className="item-center mb-[10px] flex gap-1 text-[20px] leading-[1.4] font-[600] text-[#3182f6]">
               <div className="h-[24px] w-[24px]">
                 <Shield />
               </div>
@@ -69,8 +72,8 @@ export default function TransferService() {
               안전하게 송금할 수 있어요.
             </p>
           </div>
-        </div>
-        <div className="flex justify-between">
+        </InDropUp>
+        <InDropUp className="flex justify-between">
           <div className="w-[510px]">
             <h2 className="item-center mb-[10px] flex gap-1 text-[20px] leading-[1.4] font-[600] text-[#3182f6]">
               <div className="h-[24px] w-[24px]">
@@ -81,7 +84,7 @@ export default function TransferService() {
             <p className="mb-[20px] text-[40px] leading-[1.4] font-[700] text-[#191f28]">
               은행 점검 시간,
               <br />
-              기다릴 필요 없어요.
+              기다릴 필요 없어요
             </p>
             <p
               className="text-[22px] leading-[1.5] font-[600]"
@@ -95,7 +98,7 @@ export default function TransferService() {
           <div className="w-[510px]">
             <img src="/images/wait.png" alt="wait" />
           </div>
-        </div>
+        </InDropUp>
       </div>
     </section>
   );

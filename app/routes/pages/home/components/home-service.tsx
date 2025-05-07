@@ -1,3 +1,5 @@
+import InDropUp from '~/components/animation/in-drop-up';
+
 export default function HomeService() {
   return (
     <section className="h-[1687px]">
@@ -15,7 +17,7 @@ export default function HomeService() {
               똑똑하게
             </p>
           </div>
-          <div className="relative">
+          <InDropUp>
             <img
               className="absolute top-[75px] left-[32px] w-[275px]"
               src="/images/home-service-1.png"
@@ -26,7 +28,7 @@ export default function HomeService() {
               src="/images/iphone.png"
               alt="iphone"
             />
-          </div>
+          </InDropUp>
         </div>
         <div className="flex flex-1 flex-col items-end">
           <div className="relative">
