@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+
 import CreditService from './components/credit-service';
 import Description from './components/description';
 import FinanceIntro from './components/finance-intro';
@@ -8,6 +10,8 @@ import LoanService from './components/loan-service';
 import TransferService from './components/transfer-service';
 
 export default function Home() {
+  const ref = useRef(null);
+
   return (
     <div>
       <Hero />
@@ -16,8 +20,10 @@ export default function Home() {
       <TransferService />
       <LoanService />
       <CreditService />
-      <InvestService />
-      <FinanceIntro />
+      <div ref={ref}>
+        <InvestService />
+        <FinanceIntro ref={ref} />
+      </div>
     </div>
   );
 }
