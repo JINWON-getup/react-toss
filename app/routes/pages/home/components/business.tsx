@@ -1,5 +1,6 @@
 import type React from 'react';
 
+import InDropUp from '~/components/animation/in-drop-up';
 import { Button } from '~/components/ui/button';
 
 interface ServiceProps {
@@ -31,10 +32,10 @@ const Service = ({ title, description, buttonText }: ServiceProps) => {
 export default function Business() {
   return (
     <section className="h-[1927px] bg-black">
-      <div className="pt-[100px]">
+      <InDropUp className="pt-[100px]">
         <img src="/images/devices.png" alt="devices" className="w-full" />
-      </div>
-      <div className="text-center">
+      </InDropUp>
+      <InDropUp className="text-center">
         <h1 className="mb-[21px] text-[60px] leading-[1.4] font-[700] text-white">
           사업도 토스와 함께
         </h1>
@@ -45,9 +46,9 @@ export default function Business() {
           <br />
           이제 토스와 함께 하세요.
         </p>
-      </div>
+      </InDropUp>
       <div className="flex justify-center px-[48px]">
-        <div>
+        <InDropUp>
           <Service
             title="토스결제"
             description={
@@ -61,8 +62,8 @@ export default function Business() {
             }
             buttonText="가맹점 문의하기"
           />
-        </div>
-        <div>
+        </InDropUp>
+        <InDropUp>
           <Service
             title="내 매출 장부"
             description={
@@ -76,8 +77,8 @@ export default function Business() {
             }
             buttonText="자세히 알아보기"
           />
-        </div>
-        <div className="ml-[30px]">
+        </InDropUp>
+        <InDropUp className="ml-[30px]">
           <Service
             title="토스페이먼츠"
             description={
@@ -91,8 +92,8 @@ export default function Business() {
             }
             buttonText="홈페이지 바로가기"
           />
-        </div>
-        <div className="ml-[30px]">
+        </InDropUp>
+        <InDropUp className="ml-[30px]">
           <Service
             title="토스플레이스"
             description={
@@ -106,7 +107,7 @@ export default function Business() {
             }
             buttonText="홈페이지 바로가기"
           />
-        </div>
+        </InDropUp>
       </div>
     </section>
   );
