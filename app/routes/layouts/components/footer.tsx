@@ -170,7 +170,6 @@ export default function Footer() {
               <Facebook />
             </Link>
             <Link to="#">
-              j
               <TossBlog />
             </Link>
             <Link to="#">
