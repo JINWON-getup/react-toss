@@ -14,7 +14,10 @@ export default function PaymentService() {
               <br />
               할인과 적립은 두둑히
             </p>
-            <p className="text-[rgb(51, 61, 75)] pt-[30px] text-[23px] leading-[1.5] font-[600]">
+            <p
+              className="pt-[60px] text-[23px] leading-[1.5] font-[600]"
+              style={{ color: 'rgb(51, 61, 75)' }}
+            >
               온라인과 오프라인 모두
               <br />
               국내는 물론, 해외에서도
@@ -22,18 +25,18 @@ export default function PaymentService() {
               토스로 간편하게 결제해요.
             </p>
           </InDropUp>
-          <div className="relative">
+          <InDropUp className="relative">
             <img
               className="absolute top-[87px] left-[50px] w-[300px]"
               src="/images/payment-01.png"
               alt="payment-01"
             />
             <img
-              className="relative left-[-10px] w-[600px]"
+              className="relative left-[-63px] w-[600px]"
               src="/images/iphone.png"
               alt="iphone"
             />
-          </div>
+          </InDropUp>
         </div>
         <div className="flex-1">
           <InDropUp className="relative">
@@ -43,18 +46,21 @@ export default function PaymentService() {
               alt="payment-02"
             />
             <img
-              className="relative left-[-10px] w-[600px]"
+              className="relative left-[-30px] w-[600px]"
               src="/images/iphone.png"
               alt="iphone"
             />
           </InDropUp>
           <InDropUp>
-            <p className="text-[rgb(51, 61, 75)] pt-[60px] pl-[60px] text-[23px] leading-[1.5] font-[600]">
+            <p
+              className="pt-[60px] pl-[60px] text-[23px] leading-[1.5] font-[600]"
+              style={{ color: 'rgb(51, 61, 75)' }}
+            >
               결제할 땐, 혜택이 빠질 수 없죠.
               <br />
               쿠폰과 포인트 써서 할인 받고
               <br />
-              토스 프라임 적립까지 또 받아요.
+              토스프라임 적립까지 또 받아요.
             </p>
           </InDropUp>
         </div>

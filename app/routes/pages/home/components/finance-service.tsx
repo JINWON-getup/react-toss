@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from 'motion/react';
+import { useScroll } from 'motion/react';
 import { useRef } from 'react';
 
 import ScrollOpacity from '~/components/animation/scroll-opacity';
@@ -6,10 +6,9 @@ import ScrollOpacity from '~/components/animation/scroll-opacity';
 export default function FinanceService() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, layoutEffect: false });
-  const scrollY = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <motion.section className="h-[4232px]" ref={ref} style={{ lineHeight: scrollY }}>
+    <section className="h-[4232px]" ref={ref}>
       <div className="relative container pt-[250px]">
         <h1 className="mb-[140px] text-[60px] leading-[1.4] font-[700] text-[#191f28]">
           금융을 넘어
@@ -25,7 +24,7 @@ export default function FinanceService() {
           >
             <img
               src="/images/finance-01.jpg"
-              alt="finance-01"
+              alt="finance"
               className="mx-auto mb-[60px] w-[740px]"
             />
           </ScrollOpacity>
@@ -58,7 +57,7 @@ export default function FinanceService() {
             >
               <img
                 src="/images/finance-02.jpg"
-                alt="finance-02"
+                alt="finance"
                 className="mb-[40px] w-[672px]"
               />
             </ScrollOpacity>
@@ -85,7 +84,7 @@ export default function FinanceService() {
             >
               <img
                 src="/images/finance-03.jpg"
-                alt="finance-03"
+                alt="finance"
                 className="mb-[35px] w-[336px]"
               />
             </ScrollOpacity>
@@ -114,7 +113,7 @@ export default function FinanceService() {
           >
             <img
               src="/images/finance-04.jpg"
-              alt="finance-04"
+              alt="finance"
               className="mb-[50px] w-full"
             />
           </ScrollOpacity>
@@ -139,6 +138,6 @@ export default function FinanceService() {
           </ScrollOpacity>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }
