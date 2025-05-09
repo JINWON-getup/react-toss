@@ -20,7 +20,7 @@ const FooterNav = ({ title, data }: FooterNavProps) => {
         {data.map((item, index) => (
           <li
             key={index}
-            className="text-[15px] leading-[30px] font-[400] text-[#6b7684]"
+            className="hover-deco text-[15px] leading-[30px] font-[400] text-[#6b7684]"
           >
             <Link to={item.link}>{item.label}</Link>
           </li>
