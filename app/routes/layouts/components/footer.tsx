@@ -39,9 +39,9 @@ const FOOTER_NAV: FooterNavProps[] = [
   {
     title: '서비스',
     data: [
-      { label: '공지사항', link: '#' },
+      { label: '공지사항', link: '/notice' },
       { label: '자주 묻는 질문', link: '#' },
-      { label: '공동인증서관리', link: '#' },
+      { label: '공동인증서 관리', link: '#' },
       { label: '계정 일시잠금', link: '#' },
       { label: '고객센터', link: '#' },
       { label: '개인(신용)정보 이용·제공 내역 조회', link: '#' },
@@ -96,13 +96,13 @@ const FOOTER_TERMS: { label: string; link: string; isBold?: boolean }[][] = [
     { label: '서비스 이용약관', link: '#' },
     { label: '개인정보 처리방침', link: '#', isBold: true },
     { label: '위치기반서비스 이용약관', link: '#', isBold: true },
-    { label: '금융소비자 보호', link: '#' },
+    { label: '금융소비자보호', link: '#' },
   ],
   [
     { label: '통합 금융정보 서비스 약관', link: '#' },
     { label: '채용팀 개인정보 처리방침', link: '#', isBold: true },
     { label: '가맹점 고지사항', link: '#' },
-    { label: '토스비지니스 개인정보 처리방침', link: '#', isBold: true },
+    { label: '토스비즈니스 개인정보 처리방침', link: '#', isBold: true },
   ],
   [
     { label: '마이데이터 서비스 이용약관', link: '#' },
@@ -118,7 +118,7 @@ const FOOTER_TERMS: { label: string; link: string; isBold?: boolean }[][] = [
 
 export default function Footer() {
   return (
-    <footer className="pt-[150px] pb-[100px]">
+    <footer className="pt-[50px] pb-[100px]">
       <div className="container px-[67px]">
         <div className="flex gap-8">
           {FOOTER_NAV.map((nav, index) => (
@@ -127,11 +127,11 @@ export default function Footer() {
         </div>
         <div className="mt-[50px]">
           <div>
-            <h2 className="text-[15px] leading-[20px] font-[700px] text-[#333d4b]">
+            <h2 className="pb-4 text-[15px] leading-[20px] font-[700] text-[#333d4b]">
               ㈜비바리퍼블리카
             </h2>
           </div>
-          <div className="pb-4 text-[15px] leading-[20px] font-[400] text-[#8b95a1]">
+          <div className="text-[15px] leading-[20px] font-[400] text-[#8b95a1]">
             <p>사업자 등록번호 : 120-88-01280 | 대표 : 이승건</p>
             <p>
               호스팅 서비스 : 주식회사 비바리퍼블리카 | 통신판매업 신고번호 :
@@ -154,7 +154,7 @@ export default function Footer() {
                     <li
                       key={j}
                       className={cn(
-                        'text-[12px] leading-[1.5] font-[400] text-[#8b95a1]',
+                        'hover-deco text-[16px] leading-[1.5] font-[400] text-[#8b95a1]',
                         term.isBold && 'font-bold',
                       )}
                     >
