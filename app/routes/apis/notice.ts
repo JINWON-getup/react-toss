@@ -1,5 +1,10 @@
 import prisma from '~/.server/lib/prisma';
 
+export const loader = async () => {
+  const notices = await prisma.notice.findMany();
+  return { notices };
+};
+
 export const action = async ({ request }) => {
   const payload = await request.json();
   const { title, content } = payload;

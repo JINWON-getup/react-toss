@@ -20,7 +20,7 @@ const config: runtime.GetPrismaClientConfig = {
       value: 'prisma-client',
     },
     output: {
-      value: '/Users/sjjin/Desktop/edu/react-toss/app/generated/prisma',
+      value: 'C:\\study_vscode\\react\\react-toss\\app\\generated\\prisma',
       fromEnvVar: null,
     },
     config: {
@@ -29,12 +29,16 @@ const config: runtime.GetPrismaClientConfig = {
     binaryTargets: [
       {
         fromEnvVar: null,
-        value: 'darwin-arm64',
+        value: 'windows',
         native: true,
+      },
+      {
+        fromEnvVar: null,
+        value: 'windows',
       },
     ],
     previewFeatures: [],
-    sourceFilePath: '/Users/sjjin/Desktop/edu/react-toss/prisma/schema.prisma',
+    sourceFilePath: 'C:\\study_vscode\\react\\react-toss\\prisma\\schema.prisma',
     isCustomOutput: true,
   },
   relativePath: '../../../prisma',
@@ -42,18 +46,18 @@ const config: runtime.GetPrismaClientConfig = {
   engineVersion: '3cff47a7f5d65c3ea74883f1d736e41d68ce91ed',
   datasourceNames: ['db'],
   activeProvider: 'postgresql',
-  postinstall: false,
   inlineDatasources: {
     db: {
       url: {
         fromEnvVar: 'POSTGRESQL_URL',
-        value: null,
+        value:
+          'postgresql://neondb_owner:npg_AP1VG3tOWNpe@ep-solitary-water-a1jt1ap2-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require',
       },
     },
   },
   inlineSchema:
-    '// This is your Prisma schema file,\n// learn more about it in the docs: https://pris.ly/d/prisma-schema\n\n// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?\n// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init\n\ngenerator client {\n  provider = "prisma-client"\n  output   = "../app/generated/prisma"\n}\n\ndatasource db {\n  provider = "postgresql"\n  url      = env("POSTGRESQL_URL")\n}\n\nmodel Notice {\n  id        Int      @id @default(autoincrement())\n  title     String\n  content   String\n  createdAt DateTime @default(now())\n  updatedAt DateTime @updatedAt\n}\n',
-  inlineSchemaHash: '1843e568c51835c7b3a2532cc481e4a33f76d5535424d7c0452cf17f5e372427',
+    '// This is your Prisma schema file,\n// learn more about it in the docs: https://pris.ly/d/prisma-schema\n\n// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?\n// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init\n\ngenerator client {\n  provider      = "prisma-client"\n  output        = "../app/generated/prisma"\n  binaryTargets = ["native", "windows"]\n}\n\ndatasource db {\n  provider = "postgresql"\n  url      = env("POSTGRESQL_URL")\n}\n\nmodel Notice {\n  id        Int      @id @default(autoincrement())\n  title     String\n  content   String\n  createdAt DateTime @default(now())\n  updatedAt DateTime @updatedAt\n}\n',
+  inlineSchemaHash: 'c90598ef7c7bc9e5415348a03056a3c83e52f7150aaa5f0c0bd2c1d0980678e0',
   copyEngine: true,
   runtimeDataModel: {
     models: {},
