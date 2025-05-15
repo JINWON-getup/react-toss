@@ -56,7 +56,7 @@ export default function FinanceService() {
               endScrollY={0.5}
             >
               <img
-                src="/images/finance-02.jpg"
+                src="/images/finance-02-01.jpg"
                 alt="finance"
                 className="mb-[40px] w-[672px]"
               />
@@ -83,7 +83,7 @@ export default function FinanceService() {
               endScrollY={0.5}
             >
               <img
-                src="/images/finance-03.jpg"
+                src="/images/finance-02-02.jpg"
                 alt="finance"
                 className="mb-[35px] w-[336px]"
               />
@@ -112,7 +112,7 @@ export default function FinanceService() {
             endScrollY={1}
           >
             <img
-              src="/images/finance-04.jpg"
+              src="/images/finance-03.jpg"
               alt="finance"
               className="mb-[50px] w-full"
             />

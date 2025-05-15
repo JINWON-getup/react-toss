@@ -10,10 +10,10 @@ export default function LoanService() {
   const isMobile = useMediaQuery(MediaQuery.MOBILE);
 
   return (
-    <section className="h-auto bg-[#f9fafb] desktop:h-[1326px]">
+    <section className="h-auto desktop:h-[1326px]">
       <div className="container flex flex-col py-[100px] desktop:flex-row desktop:pt-[250px]">
         <div>
-          <InDropUp className="mb-[0] desktop:mb-[210px]">
+          <InDropUp className="mb-0 desktop:mb-[210px]">
             <h1 className="mb-[10px] text-[18px] leading-[1.3] font-[700] text-[#3182f6] desktop:mb-[20px] desktop:text-[28px]">
               대출
             </h1>
