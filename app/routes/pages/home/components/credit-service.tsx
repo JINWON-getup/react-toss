@@ -2,13 +2,13 @@ import InDropUp from '~/components/animation/in-drop-up';
 
 export default function CreditService() {
   return (
-    <section className="h-[1687px] bg-[#f9fafb]">
-      <div className="container pt-[250px]">
+    <section className="h-auto bg-[#f9fafb] desktop:h-[1687px]">
+      <div className="container py-[1000px] desktop:pt-[250px]">
         <div>
-          <h1 className="mb-[30px] text-[28px] leading-[1.3] font-[700] text-[#3182f6]">
+          <h1 className="mb-[10px] text-[18px] leading-[1.3] font-[700] text-[#3182f6] desktop:mb-[30px] desktop:text-[28px]">
             신용
           </h1>
-          <p className="mb-[80px] text-[50px] leading-[1.4] font-[700] text-[#191f28]">
+          <p className="mb-[60px] text-[28px] leading-[1.4] font-[700] text-[#191f28] desktop:mb-[80px] desktop:text-[50px]">
             금융 생활의 첫 걸음,
             <br />
             신용점수를 미리
@@ -17,21 +17,21 @@ export default function CreditService() {
           </p>
         </div>
         <InDropUp>
-          <div className="grid grid-cols-2">
-            <div className="mb-[30px] h-[400px]">
+          <div className="grid grid-cols-1 desktop:grid-cols-2">
+            <div className="mb-[20px] h-[220px] desktop:h-[400px]">
               <img
                 src="/images/credit-point.png"
                 alt="credit-point"
-                className="mb-[30px] w-[120px]"
+                className="mb-[20px] w-[80px] desktop:w-[120px]"
               />
               <h2
-                className="mb-[10px] text-[28px] leading-[1.4] font-[700]"
+                className="mb-[10px] text-[24px] leading-[1.4] font-[700] desktop:text-[28px]"
                 style={{ color: 'rgb(51, 61, 75' }}
               >
                 내 신용점수
               </h2>
               <p
-                className="text-[22px] leading-[1.5] font-[600]"
+                className="text-[15px] leading-[1.5] font-[600] desktop:text-[22px]"
                 style={{ color: 'rgb(107, 118, 132' }}
               >
                 언제 어디서든, 원할 때 간편하게 <br />
@@ -39,11 +39,11 @@ export default function CreditService() {
                 있어요.
               </p>
             </div>
-            <div className="mb-[30px] h-[400px]">
+            <div className="mb-[20px] h-[220px] desktop:h-[400px]">
               <img
                 src="/images/credit-point-up.png"
                 alt="credit-point-up"
-                className="mb-[30px] h-[120px]"
+                className="mb-[20px] h-[120px]"
               />
               <h2
                 className="mb-[10px] text-[28px] leading-[1.4] font-[700]"
@@ -52,7 +52,7 @@ export default function CreditService() {
                 신용점수 올리기
               </h2>
               <p
-                className="text-[22px] leading-[1.5] font-[600]"
+                className="text-[15px] leading-[1.5] font-[600] desktop:text-[22px]"
                 style={{ color: 'rgb(107, 118, 132' }}
               >
                 통신비, 일반 납부내역 등의 서류를 <br />
@@ -60,8 +60,12 @@ export default function CreditService() {
                 있어요.
               </p>
             </div>
-            <div className="mb-[30px] h-[400px]">
-              <img src="/images/bell.png" alt="bell" className="mb-[30px] w-[120px]" />
+            <div className="mb-[20px] h-[220px] desktop:h-[400px]">
+              <img
+                src="/images/bell.png"
+                alt="bell"
+                className="mb-[20px] w-[80px] desktop:w-[120px]"
+              />
               <h2
                 className="mb-[10px] text-[28px] leading-[1.4] font-[700]"
                 style={{ color: 'rgb(51, 61, 75)' }}
@@ -69,15 +73,19 @@ export default function CreditService() {
                 신용관리 알림
               </h2>
               <p
-                className="text-[22px] leading-[1.5] font-[600]"
+                className="text-[15px] leading-[1.5] font-[600] desktop:text-[22px]"
                 style={{ color: 'rgb(107, 118, 132)' }}
               >
                 신용점수에 변동이 생기면 토스가 알람을 보내드려요. <br />
                 나의 신용점수가 바뀔 때마다 바로 확인하세요.
               </p>
             </div>
-            <div className="mb-[30px] h-[400px]">
-              <img src="/images/bulb.png" alt="bulb" className="mb-[30px] w-[120px]" />
+            <div className="mb-[20px] h-[220px] desktop:h-[400px]">
+              <img
+                src="/images/bulb.png"
+                alt="bulb"
+                className="mb-[20px] w-[80px] desktop:w-[120px]"
+              />
               <h2
                 className="mb-[10px] text-[28px] leading-[1.4] font-[700]"
                 style={{ color: 'rgb(51, 61, 75)' }}
@@ -85,7 +93,7 @@ export default function CreditService() {
                 신용관리 팁
               </h2>
               <p
-                className="text-[22px] leading-[1.5] font-[600]"
+                className="text-[15px] leading-[1.5] font-[600] desktop:text-[22px]"
                 style={{ color: 'rgb(107, 118, 132)' }}
               >
                 신용점수 관리가 막막하다면? <br />
