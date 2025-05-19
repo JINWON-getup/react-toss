@@ -99,7 +99,7 @@
 }
 
 .hero-shadow {
-  background: linear-gradient(180deg, white 0%, white 59px, rgba(225, 255, 225, 0) 100%);
+  background: linear-gradient(180deg, white 0%, white 59px, rgba(255, 255, 255, 0) 100%);
 }
 
 .hover-deco:hover {
@@ -110,4 +110,10 @@
 .hover-icon:hover {
   opacity: 1;
   transition: 0.5s;
+}
+
+.sidebar-active {
+  & > button {
+    @apply bg-sidebar-accent text-sidebar-accent-foreground;
+  }
 }
